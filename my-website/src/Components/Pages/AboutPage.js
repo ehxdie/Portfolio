@@ -1,11 +1,16 @@
 import React from 'react'
+import Header from '../Header'
+import Footer from '../Footer'
 
 function AboutPage() {
   return (
-    <div>
-        <Headers/>
-        <Footer/>
-    </div>
+   
+      <div className='Aboutpage-container'>
+        <div className='Aboutpage-body'>
+          What a guy i am
+        </div>
+      </div>
+    
   )
 }
 
