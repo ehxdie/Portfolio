@@ -22,7 +22,7 @@ const navigate = useNavigate();
                 About
             </div>
             <div onClick={() => {
-                  navigate('/contact')
+                  navigate('/ContactPage')
               }}>
                 Contact
             </div>

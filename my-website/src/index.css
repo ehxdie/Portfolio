@@ -42,7 +42,8 @@ body{
   padding: 10px 0px 2px 0px;
   flex-shrink: 0;
   font-family: 'DM Sans', sans-serif;
-  margin-top: 102px;
+  margin-top: 120px;
+  margin-bottom: 223px;
 }
 .Header-container-1{
   display: flex;
@@ -114,10 +115,10 @@ body{
 
 /* Homepage */
 .Homepage-container{
-  margin-top: 223px;
   display: flex;
   flex-direction: column;
   margin-bottom: 113px;
+  
 }
 .Homepage-header{
   display: flex;
@@ -127,6 +128,9 @@ body{
   flex-shrink: 0;
   font-family: 'DM Sans', sans-serif;
 }
+.Homepage-header-section{
+  
+}
 .Homepage-header-text1 {
   display: flex;
   justify-self: flex-start;
@@ -135,7 +139,7 @@ body{
     font-weight: bold;
     line-height: 97.2%;
     /* 58.32px */
-    letter-spacing: -1.8px
+    letter-spacing: 1px
 }
 .Homepage-header-text2 {
   margin-top: 150px;
@@ -150,9 +154,65 @@ body{
     margin-right: 66px;
     
 }
+
 /* icon */
 .icon{
   width: 33.608px;
   height: 38.04px;
-  margin-top: 116px;
+  margin-right: 5px;
 }
+
+.icon-area{
+  margin-top: 116px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+/* Aboutpage */
+.Aboutpage-container{ 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 113px;
+}
+.Aboutpage-about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1120px;
+  flex-shrink: 0;
+  font-family: 'DM Sans', sans-serif;
+ 
+}
+.Aboutpage-about-text{
+  flex: 0.7;
+}
+
+.Aboutpage-about-text1{
+    display: flex;
+    justify-self: flex-start;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 97.2%;
+    /* 58.32px */
+    letter-spacing: 1px
+}
+.Aboutpage-about-text2{
+    margin-top: 32px;
+    display: flex;
+    justify-self: flex-start;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117%;
+    /* 37.44px */
+    letter-spacing: -0.96px;
+}
+/* .img{
+  width: 421px;
+  height: 421px;
+  flex-shrink: 0;
+  border-radius: 20px;
+} */
