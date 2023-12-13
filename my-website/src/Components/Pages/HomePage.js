@@ -3,7 +3,8 @@ import Footer from '../Footer'
 import Header from '../Header'
 import "../../index.css";
 import SouthOutlinedIcon from '@mui/icons-material/SouthOutlined';
-useState
+import Projects from '../Projects';
+
 
 
 function HomePage() {
@@ -13,7 +14,7 @@ function HomePage() {
     number: 1,
     name: "Project name",
     description: "Project description",
-    stack: "Ptack description",
+    stack: "stack description",
     link: "http://stackoverflow.com",
     img: "img",
   },
@@ -21,11 +22,24 @@ function HomePage() {
     number: 2,
     name: "Project name",
     description: "Project description",
-    stack: "Ptack description",
+    stack: "stack description",
     link: "http://stackoverflow.com",
     img: "img",
   
-  }]
+  }])
+
+  const ProjectCard = projects.map(project => {
+    return (
+      <Projects 
+      key={project.number} 
+      number={project.number} 
+      name={project.name} 
+      description={project.description} 
+      stack={project.stack} 
+      link={project.link} 
+      img={project.img}/>
+    )
+  }
     
 
   );
@@ -45,6 +59,7 @@ function HomePage() {
 
             </div>
             <div className='Homepage-body'>
+              {ProjectCard}
             </div>
         </div>
       
