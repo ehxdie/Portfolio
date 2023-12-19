@@ -4,38 +4,42 @@ import Header from '../Header'
 import "../../index.css";
 import Projects from '../Projects';
 import SouthOutlinedIcon from '@mui/icons-material/SouthOutlined';
+import workoutimg from "../Images/workout.jpg";
+import votingapplicationimg from "../Images/VotingApplication.jpg";
+import chatappimg from "../Images/chatapp.jpg";
+import gameimg from "../Images/Game.jpg";
 
 
 function HomePage() {
   // Setting up dummy data for the projects data
   const [projects, setprojects] = useState([
   {
-    name: "Mern Application",
-    description: "Project description",
-    stack: "Stack description",
+    name: "Mern Application 'workout buddy'",
+    description: "This is a full stack application built on the MERN stack with some CRUD features",
+    stack: "React, MongoDB, Express and Node",
     link: "http://stackoverflow.com",
-    img: "img",
+    img: workoutimg,
   },
   {
     name: "Electronic Voting System",
-    description: "Project description",
-    stack: "Stack description",
+    description: "An electronic voting system built using Solidity, Ethereum network (sempolia testnet) and Metamask, The Chai and Mocha library where used for testing the smart contract",
+    stack: "React, Solidity, Sempolia testnet, and Chai and Mocha library",
     link: "http://stackoverflow.com",
-    img: "img",
+    img: votingapplicationimg,
   
     }, {
       name: "Chat App",
       description: "Project description",
       stack: "Stack description",
       link: "http://stackoverflow.com",
-      img: "img",
+      img: chatappimg,
     }, 
       {
       name: "OOP da game",
       description: "Project description",
       stack: "Stack description",
       link: "http://stackoverflow.com",
-      img: "img",
+      img: gameimg,
     }])
 
   const ProjectCard = projects.map(project => {

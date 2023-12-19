@@ -2,13 +2,18 @@ import React, { useState } from 'react'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 
+
 function Projects(props) {
   const [infocontrol, setinfocontrol] = useState(true);
+  const [infocontrol1, setinfocontrol1] = useState(true);
 
+  // Not the best way to handle the dropdown state change tbh
   const handleclick = () => setinfocontrol(!infocontrol);
+  const handleclick1 = () => setinfocontrol1(!infocontrol1);
 
-  const propsDescription = <p>Project description <KeyboardArrowDownOutlinedIcon/></p>;
+
   console.log(infocontrol);
+  
 
   return (
     <>
@@ -17,12 +22,15 @@ function Projects(props) {
          <div className='projects-container-text'>
               <p className='projects-container-text1'>Title: {props.name}</p>
               <div className='projects-container-text2-header' onClick={handleclick}>
-                 <div className='text2-header'> Project description {infocontrol ? <KeyboardArrowDownOutlinedIcon /> : <KeyboardArrowUpOutlinedIcon />}</div>
-                 {infocontrol ? null : <p className='projects-container-text2'>{props.description}</p>}
+                 <div className='text2-header'> Project description {infocontrol ? <KeyboardArrowDownOutlinedIcon /> : <KeyboardArrowUpOutlinedIcon />}
+                </div>
+                {infocontrol ? null : <ul className='projects-container-text2'>{props.description}</ul>}  
+
               </div>
-          <div className='projects-container-text3-header' onClick={handleclick}P>
-                <div className='text2-header'> Tech Stack {infocontrol ? <KeyboardArrowDownOutlinedIcon /> : <KeyboardArrowUpOutlinedIcon />}</div>
-                {infocontrol ? null : <p className='projects-container-text3'>{props.stack}</p>}
+          <div className='projects-container-text3-header' onClick={handleclick1}P>
+                <div className='text2-header'> Tech Stack {infocontrol1 ? <KeyboardArrowDownOutlinedIcon /> : <KeyboardArrowUpOutlinedIcon />}
+                </div>
+                {infocontrol1 ? null : <ul className='projects-container-text3'>{props.stack}</ul>}
             </div> 
 
             <a className='projects-container-link'href={props.link} target='_blank' rel='noopener noreferrer'>{props.link}</a>
