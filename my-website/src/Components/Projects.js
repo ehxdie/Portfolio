@@ -24,13 +24,13 @@ function Projects(props) {
               <div className='projects-container-text2-header' onClick={handleclick}>
                  <div className='text2-header'> Project description {infocontrol ? <KeyboardArrowDownOutlinedIcon /> : <KeyboardArrowUpOutlinedIcon />}
                 </div>
-                {infocontrol ? null : <ul className='projects-container-text2'>{props.description}</ul>}  
+                {infocontrol ? null : <div className='projects-container-text2'>{props.description}</div>}  
 
               </div>
           <div className='projects-container-text3-header' onClick={handleclick1}P>
                 <div className='text2-header'> Tech Stack {infocontrol1 ? <KeyboardArrowDownOutlinedIcon /> : <KeyboardArrowUpOutlinedIcon />}
                 </div>
-                {infocontrol1 ? null : <ul className='projects-container-text3'>{props.stack}</ul>}
+                {infocontrol1 ? null : <div className='projects-container-text3'>{props.stack}</div>}
             </div> 
 
             <a className='projects-container-link'href={props.link} target='_blank' rel='noopener noreferrer'>{props.link}</a>

@@ -8,13 +8,13 @@ function Footer() {
           </div>
           <div className='Footer-container-2'>
               <div>
-                  Linkeldn
+                  <a href='https://www.linkedin.com/in/edidiong-ephraim/' className='links-style'>Linkeldn</a>
               </div>
               <div>
-                  Email
+                  <a href='https://www.linkedin.com/in/edidiong-ephraim/' className='links-style'>Email</a>
               </div>
               <div>
-                  Github
+                  <a href='https://github.com/ehxdie' className='links-style'>Github</a>
               </div>
 
           </div>
