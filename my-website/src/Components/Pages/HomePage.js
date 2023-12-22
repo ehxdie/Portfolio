@@ -65,7 +65,7 @@ function HomePage() {
                 <div className='Homepage-header-section'>
                   <p className='Homepage-header-text1'>Hello, I'm <br></br> Edidiong Ephraim.</p>
                   <div className='icon-area'>
-                    <p className='icon-area-text'>Download my CV?</p>
+                    <p className='icon-area-text'> <a className='links-style'>Download my CV?</a></p>
                   </div>
                 </div>
                 <p className='Homepage-header-text2'>I'm a Full Stack and Web 3 Developer.</p>

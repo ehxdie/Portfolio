@@ -13,17 +13,17 @@ const navigate = useNavigate();
         <div className='Header-container-2'>
             <div onClick={() => {
                 navigate('/')
-            }}>
+            }} className='links-style'>
                 Work
             </div>
             <div onClick={() => {
                 navigate('/AboutPage')
-            }}> 
+            }} className='links-style'> 
                 About
             </div>
             <div onClick={() => {
                   navigate('/ContactPage')
-              }}>
+              }} className='links-style'>
                 Contact
             </div>
 

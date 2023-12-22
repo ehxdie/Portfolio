@@ -16,7 +16,6 @@ function Footer() {
               <div>
                   <a href='https://github.com/ehxdie' className='links-style'>Github</a>
               </div>
-
           </div>
       </div>
   )

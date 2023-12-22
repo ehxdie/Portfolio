@@ -116,6 +116,8 @@ body{
 .links-style{
   color: var(--Main-Black, #181717);
   text-decoration: none;
+  cursor: pointer;
+  
 }
 .links-style:hover{
   text-decoration: underline;
@@ -222,6 +224,7 @@ body{
     line-height: 117%;
     /* 37.44px */
     letter-spacing: -0.96px;
+    margin-bottom: 20px;
 }
  .img{
   width: 640px;
@@ -230,6 +233,28 @@ body{
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 } 
+.Aboutpage-techstack {
+  color: var(--Main-Black, #181717);
+    /* Body */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121.5%;
+    /* 21.87px */
+    letter-spacing: -0.54px;
+}
+.list{
+  display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 180px));
+    column-gap: 1.5rem;
+    /* Equivalent to gap-x-12 */
+    row-gap: 0.5rem;
+    /* Equivalent to gap-y-4 */
+    margin-top: 3px;
+    /* Equivalent to mt-20 */
+    margin-bottom: 5rem;
+}
 
 /* Projects */
 .projects-headline{
@@ -404,5 +429,133 @@ body{
     line-height: 121.5%;
     /* 21.87px */
     letter-spacing: -0.54px;
+  
+}
+/* Contact Page */
+.contact-container {
+  display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    /* Adjusted for equivalent spacing */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-bottom: 196px;
+    gap: 190px;
+}
+.contact-text{
+  color: var(--Main-Black, #181717);
+    font-family: DM Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117%;
+    letter-spacing: -0.96px;
+    width: 347px;
+    height: 71px;
+    flex-shrink: 0;
+    justify-self: flex-start;
+}
+.contact-form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form{
+  display: flex;
+    /* Equivalent to flex */
+    flex-direction: column;
+    /* Equivalent to flex-col */
+    width: 500px;
+    /* Equivalent to w-full */
+}
+
+.contact-name{
+    padding: 0.5rem;
+      /* Equivalent to p-2 */
+      background-color: transparent;
+      /* Equivalent to bg-transparent */
+      border-width: 2px;
+      /* Equivalent to border-2 */
+      border-radius: 0.375rem;
+      /* Equivalent to rounded-md */
+      outline: none;
+}
+.contact-email{
+  margin-top: 0.5rem;
+    /* Equivalent to my-2 */
+    margin-bottom: 0.5rem;
+    /* Equivalent to my-2 */
+    padding: 0.5rem;
+    /* Equivalent to p-2 */
+    background-color: transparent;
+    /* Equivalent to bg-transparent */
+    border-width: 2px;
+    /* Equivalent to border-2 */
+    border-radius: 0.375rem;
+    /* Equivalent to rounded-md */
+    outline: none;
+}
+.contact-message {
+  padding: 0.5rem;
+    /* Equivalent to p-2 */
+    margin-bottom: 1rem;
+    /* Equivalent to mb-4 */
+    background-color: transparent;
+    /* Equivalent to bg-transparent */
+    border-width: 2px;
+    /* Equivalent to border-2 */
+    border-radius: 0.375rem;
+    /* Equivalent to rounded-md */
+    outline: none;
+}
+.contact-submit {
+    text-align: center;
+      /* Equivalent to text-center */
+      display: inline-block;
+      /* Equivalent to inline-block */
+      padding: 0.75rem 2rem;
+      /* Equivalent to px-8 py-3 */
+      max-width: max-content;
+      /* Equivalent to w-max */
+      font-size: 1rem;
+      /* Equivalent to text-base */
+      font-weight: 500;
+      /* Equivalent to font-medium */
+      border-radius: 0.375rem;
+      /* Equivalent to rounded-md */
+      color: #fff;
+      /* Equivalent to text-white */
+      background: linear-gradient(to right, #ffeb3b, #e91e63);
+      /* Equivalent to bg-gradient-to-r from-yellow-500 to-pink-500 */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* Equivalent to drop-shadow-md */
+      transition: stroke 0.3s ease;
+}
+/* */
+.contact-arrow {
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%);
+    /* Change color as needed */
+  animation: Arrow 1s infinite;
+}
+@keyframes Arrow {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+
+   /* 40% {
+    transform: translatex(-15px);
+   } */
+
+  60% {
+    transform: translatex(15px);
+  }
   
 }
