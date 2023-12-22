@@ -16,16 +16,16 @@ function AboutPage() {
             <div className='Aboutpage-techstack'>
             Core technologies:
             <ul className='list'>
-              <li>Javascript</li>
-              <li>Solidity</li>
-              <li>NodeJS</li>
-              <li>MongoDB</li>
-              <li>Solidity</li>
-              <li>Bootstrap</li>
-              <li>EtherJs</li>
-              <li>Express</li>
-              <li>Bootstrap</li>
-              <li>Jquery</li>
+              <li className='list1'> Javascript</li>
+              <li className='list1'> Solidity</li>
+              <li className='list1'> NodeJS</li>
+              <li className='list1'> MongoDB</li>
+              <li className='list1'> ReactJS</li>
+              <li className='list1'> EtherJs</li>
+              <li className='list1'> Express</li>
+              <li className='list1'> Bootstrap</li>
+              <li className='list1'> Bootstrap</li>
+              <li className='list1'> Jquery</li>
 
             </ul>
 
@@ -42,10 +42,7 @@ function AboutPage() {
         <div className='Aboutpage-info'>
           <Repositories/>
         </div>
-        <div className='Aboutpage-contact'>
-
-        </div>
-      
+       
       </div>
     
   )

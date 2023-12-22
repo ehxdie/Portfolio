@@ -43,7 +43,7 @@ body{
   flex-shrink: 0;
   font-family: 'DM Sans', sans-serif;
   margin-top: 64px;
-  margin-bottom: 223px;
+  margin-bottom: 150px;
 }
 .Header-container-1{
   display: flex;
@@ -198,7 +198,7 @@ body{
   width: 1120px;
   flex-shrink: 0;
   font-family: 'DM Sans', sans-serif;
- 
+  border-bottom: 2px solid #181717;
 }
 .Aboutpage-about-text{
   flex: 0.7;
@@ -225,14 +225,9 @@ body{
     /* 37.44px */
     letter-spacing: -0.96px;
     margin-bottom: 20px;
+    color: var(--Main-Gray, #606060);
 }
- .img{
-  width: 640px;
-  height: 364.678px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-} 
+
 .Aboutpage-techstack {
   color: var(--Main-Black, #181717);
     /* Body */
@@ -254,6 +249,14 @@ body{
     margin-top: 3px;
     /* Equivalent to mt-20 */
     margin-bottom: 5rem;
+}
+ul{
+  list-style: none;
+}
+.list1::before {
+  content: '✓';
+  text-decoration: none;
+  color: var(--Main-Gray, #606060);;
 }
 
 /* Projects */
@@ -296,7 +299,7 @@ body{
   margin-bottom: 113px;
   width: 1120px;
   height: 473px;
-  margin-top: 113px;
+  margin-top: 150px;
   justify-content: space-between;
   border-bottom: 1px solid hsl(0, 0%, 23%);
 }
@@ -384,7 +387,11 @@ body{
     transition-delay: 0.01s;
 }
 .projects-container-link{
-  margin-top: 190px;
+  color: black;
+
+}
+.projects-container-link:hover{
+  text-decoration-color: rgb(14, 14, 175);
 }
 
 .projects-container-image{
@@ -392,12 +399,20 @@ body{
   height: 364.678px;
   align-self: flex-end;
   margin-bottom: 108px;
+  margin-right: 2px;
 }
+.img {
+   width: 640px;
+   height: 364.678px;
+   flex-shrink: 0;
+   border-radius: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
 
 /* Repositories */
 .repository-container{
   display: flex;
-  margin-top: 136px;
+  margin-top: 160px;
 }
 .active-repo{
   display: flex;
@@ -411,9 +426,13 @@ body{
     line-height: 121.5%;
     /* 21.87px */
     letter-spacing: -0.54px;
+    
 }
 .underline{
-  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .active-repo-info{
@@ -442,6 +461,7 @@ body{
     justify-content: space-between;
     margin-bottom: 196px;
     gap: 190px;
+   
 }
 .contact-text{
   color: var(--Main-Black, #181717);
@@ -460,6 +480,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: flex-end;
+  justify-content: flex-end;
 }
 .contact-form{
   display: flex;

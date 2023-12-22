@@ -33,7 +33,7 @@ function Projects(props) {
                 {infocontrol1 ? null : <div className='projects-container-text3'>{props.stack}</div>}
             </div> 
 
-            <a className='projects-container-link'href={props.link} target='_blank' rel='noopener noreferrer'>{props.link}</a>
+            <a className='projects-container-link'href={props.link} target='_blank' rel='noopener noreferrer'>Visit Site</a>
         
         </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 
 
 function Repositories() {
@@ -7,7 +8,7 @@ function Repositories() {
   const [activeRepo, setActiveRepo] = useState([]);
   const [allRepos, setAllRepos] = useState([]);
 
- 
+ console.log(allRepos);
   // Fetching all repositories
  const getAllRepos = async () => {
      try {
@@ -66,12 +67,15 @@ useEffect(() => {
     <div className='repository-container'>
         <div className='active-repo'>
               <div className='underline'>
-                  Active repository: 
+                  Checkout my last active Repo <br></br> 
+                  <ArrowForwardOutlinedIcon className='contact-arrow' />
               </div>
               
               <div className='active-repo-info'>
-                  Name:{activeRepo.full_name}
-                  <a href={activeRepo.html_url}>{activeRepo.html_url}</a> 
+                  Name: {activeRepo.full_name}
+                  <div>
+                  Link:   <a href={activeRepo.html_url}> {activeRepo.html_url}</a> 
+                 </div>
               </div>
         </div>
     </div>
