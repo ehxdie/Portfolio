@@ -8,6 +8,9 @@ import workoutimg from "../Images/workout.jpg";
 import votingapplicationimg from "../Images/VotingApplication.jpg";
 import chatappimg from "../Images/chatapp.jpg";
 import gameimg from "../Images/Game.jpg";
+import { useSelector } from 'react-redux';
+
+
 
 
 function HomePage() {
@@ -57,22 +60,24 @@ function HomePage() {
     
 
   );
-
+ 
+  //Setting up theme control
+  const theme = useSelector((state) => state);
   return (
   
         <div className='Homepage-container'>
             <div className='Homepage-header'>
-                <div className='Homepage-header-section'>
-                  <p className='Homepage-header-text1'>Hello, I'm <br></br> Edidiong Ephraim.</p>
+        <div className='Homepage-header-section'>
+          <p className={theme ? 'Homepage-header-text1' : "Homepage-header-text1-dark"}>Hello, I'm <br></br> Edidiong Ephraim.</p>
                   <div className='icon-area'>
-                    <p className='icon-area-text'> <a className='links-style'>Download my CV?</a></p>
+            <p className={theme ? 'icon-area-text' : "icon-area-text-dark"}> <a className={theme ? 'links-style' : "links-style-dark"}>Download my CV?</a></p>
                   </div>
                 </div>
-                <p className='Homepage-header-text2'>I'm a Full Stack and Web 3 Developer.</p>
+        <p className={theme ? 'Homepage-header-text2' : "Homepage-header-text2-dark"}>I'm a Full Stack and Web 3 Developer.</p>
 
             </div>
             <div className='Homepage-body'>
-              <div className='projects-headline'>
+        <div className={theme ? 'projects-headline' : "projects-headline-dark"}>
                   Some of the things I've built...
                 <SouthOutlinedIcon className='icon' />
               </div>

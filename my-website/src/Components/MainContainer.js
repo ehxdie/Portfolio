@@ -6,13 +6,16 @@ import "../index.css"
 import { Routes, Route } from "react-router-dom";
 import Header from './Header'
 import Footer from './Footer'
+import { useSelector } from 'react-redux';
+
 
 
 
 function MainContainer() {
+  const theme = useSelector((state) => state);
   return (
 
-      <div className='Maincontainer'>
+      <div className={theme? 'Maincontainer': "Maincontainer-dark"}>
       <Header/>
       <Routes>
         <Route path="/" element={<HomePage/>} />

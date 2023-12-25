@@ -8,10 +8,15 @@ body{
   display: flex;
   background-color: #F3F3F3;
   min-height: 100vh;
-  justify-content: center;
-
-  
+  justify-content: center;  
 }
+.App-dark{
+  display: flex;
+    background-color: #202020;
+    min-height: 100vh;
+    justify-content: center;
+}
+
 
 /* MainContainer */
 .Maincontainer{
@@ -25,11 +30,12 @@ body{
   margin-left: 160px;
   margin-right: 160px;
   overflow: scroll;
- 
 }
+
 .Maincontainer::-webkit-scrollbar{
   display: none;
 }
+
 
 
 /* Header */
@@ -60,6 +66,7 @@ body{
 .Header-container-2{
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-bottom: 10px;
   color: var(--Main-Black, #181717);
   gap: 15px;
@@ -73,6 +80,22 @@ body{
   margin-right: 0;
 }
 
+.Header-container-1-dark {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: #DEDEDE;
+    gap: 15px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+    /* 25.2px */
+    letter-spacing: -0.63px;
+    justify-self: flex-end;
+    margin-right: 0;
+}
 /* Footer */
 .Footer-container {
   display: flex;
@@ -117,12 +140,19 @@ body{
   color: var(--Main-Black, #181717);
   text-decoration: none;
   cursor: pointer;
-  
 }
+.links-style-dark{
+  color: #DEDEDE;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .links-style:hover{
   text-decoration: underline;
 }
-
+.links-style-dark:hover {
+  text-decoration-color: #DEDEDE;
+}
 
 /* Homepage */
 .Homepage-container{
@@ -130,6 +160,11 @@ body{
   flex-direction: column;
   margin-bottom: 113px;
   
+}
+.Homepage-container-dark{
+  display: flex;
+    flex-direction: column;
+    margin-bottom: 113px;
 }
 .Homepage-header{
   display: flex;
@@ -152,6 +187,17 @@ body{
     /* 58.32px */
     letter-spacing: 1px
 }
+.Homepage-header-text1-dark{
+  display: flex;
+    justify-self: flex-start;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 97.2%;
+    /* 58.32px */
+    letter-spacing: 1px;
+    color: #DEDEDE;
+}
 .Homepage-header-text2 {
   margin-top: 150px;
   display: flex;
@@ -167,8 +213,23 @@ body{
     margin-right: 66px;
     color: #606060;
     text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px; 
+    padding: 5px; 
+}
+.Homepage-header-text2-dark{
+  margin-top: 150px;
+    display: flex;
+    justify-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117%;
+    /* 37.44px */
+    letter-spacing: -0.96px;
+    margin-right: 66px;
+    color: #959595;
     padding: 5px;
-    
 }
 
 /* icon */
@@ -176,13 +237,19 @@ body{
   width: 33.608px;
   height: 38.04px;
   margin-right: 5px;
-
 }
 
 .icon-area-text{
   text-decoration: underline;
 }
+.icon-area-text-dark{
+  text-decoration: underline;
+  text-decoration-color: #DEDEDE;
+}
 
+.icons-dark{
+  color: #DEDEDE;
+}
 
 
 /* Aboutpage */
@@ -269,6 +336,22 @@ ul{
   font-weight: bold;
   margin-top: 40px;
   margin-top: 116px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Change color as needed */
+    animation: bounceArrow 1s infinite;
+}
+.projects-headline-dark{
+  color: #DEDEDE;
+  display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-top: 116px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
