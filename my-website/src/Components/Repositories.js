@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
-
+import { useSelector } from 'react-redux';
 
 function Repositories() {
   // Setting up variables that would hold the repositories
@@ -59,19 +59,19 @@ useEffect(() => {
 
 
 
-    //full_name
-    //html_url
 
+    // Theme control
+    const theme = useSelector((state) => state);
   return (
 
     <div className='repository-container'>
-        <div className='active-repo'>
+          <div className={theme ? 'active-repo' : 'active-repo-dark'}>
               <div className='underline'>
                   Checkout my last active Repo <br></br> 
                   <ArrowForwardOutlinedIcon className='contact-arrow' />
               </div>
               
-              <div className='active-repo-info'>
+              <div className={theme ? 'active-repo-info' : 'active-repo-info-dark'} >
                   Name: {activeRepo.full_name}
                   <div>
                   Link:   <a href={activeRepo.html_url}> {activeRepo.html_url}</a> 

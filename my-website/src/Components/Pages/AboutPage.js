@@ -4,16 +4,19 @@ import Footer from '../Footer'
 import "../../index.css";
 import img from "../Images/Screenshot 2023-05-10 204421.jpg"
 import Repositories from '../Repositories';
+import { useSelector } from 'react-redux';
+
 
 
 function AboutPage() {
+  const theme = useSelector((state) => state);
   return (
       <div className='Aboutpage-container'>
         <div className='Aboutpage-about'>
           <div className='Aboutpage-about-text'>
-            <p className='Aboutpage-about-text1'>Hi, I'm Edidiong Udosen Ephraim</p>
-            <p className='Aboutpage-about-text2'>I am a dedicated software engineer with a diverse academic and career background, as a tech enthusiast I am actively learning new technologies and developing new projects.</p>
-            <div className='Aboutpage-techstack'>
+          <p className={theme ? 'Aboutpage-about-text1': 'Aboutpage-about-text1-dark'}>Hi, I'm Edidiong Udosen Ephraim</p>
+          <p className={theme ? 'Aboutpage-about-text2' : 'Aboutpage-about-text2-dark'}>I am a dedicated software engineer with a diverse academic and career background, as a tech enthusiast I am actively learning new technologies and developing new projects.</p>
+          <div className={theme ? 'Aboutpage-techstack ' : 'Aboutpage-techstack-dark'}>
             Core technologies:
             <ul className='list'>
               <li className='list1'> Javascript</li>
