@@ -500,7 +500,7 @@ ul {
   display: flex;
   flex-direction: row;
   margin-bottom: 113px;
-  width: 1120px;
+  max-width: 1120px;
   height: 473px;
   margin-top: 150px;
   justify-content: space-between;
@@ -655,8 +655,7 @@ ul {
 }
 
 .projects-container-image {
-  width: 640px;
-  height: 364.678px;
+
   align-self: flex-end;
   margin-bottom: 108px;
   margin-right: 2px;
