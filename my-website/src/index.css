@@ -49,6 +49,9 @@ body{
     overflow: scroll;
     flex: 1;
 }
+.Maincontainer-dark::-webkit-scrollbar{
+  display: none;
+}
 
 
 
