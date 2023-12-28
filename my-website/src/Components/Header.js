@@ -19,10 +19,10 @@ function Header() {
     const navigate = useNavigate();
   return (
     <div className='Header-container'>
-          <div className= {theme ? 'Header-container-1' : "Header-container-1-dark"}>
+        <div className= {theme ? 'Header-container-1' : "Header-container-1-dark"}>
             DN.
         </div>
-        <div className='Header-container-2'>
+          <div className='Header-container-2'>
             <div onClick={() => {
                 navigate('/')
               }} className={theme ? 'links-style' : "links-style-dark"}>

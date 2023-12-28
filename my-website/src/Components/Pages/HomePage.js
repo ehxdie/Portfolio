@@ -67,17 +67,18 @@ function HomePage() {
   
         <div className='Homepage-container'>
             <div className='Homepage-header'>
-        <div className='Homepage-header-section'>
-          <p className={theme ? 'Homepage-header-text1' : "Homepage-header-text1-dark"}>Hello, I'm <br></br> Edidiong Ephraim.</p>
+              <div className='Homepage-header-section'>
+                  <p className={theme ? 'Homepage-header-text1' : "Homepage-header-text1-dark"}>Hello, I'm <br></br> Edidiong Ephraim.</p>
                   <div className='icon-area'>
-            <p className={theme ? 'icon-area-text' : "icon-area-text-dark"}> <a className={theme ? 'links-style' : "links-style-dark"}>Download my CV?</a></p>
+                      <p className={theme ? 'icon-area-text' : "icon-area-text-dark"}> <a className={theme ? 'links-style' : "links-style-dark"}>Download my CV?</a></p>
                   </div>
-                </div>
-        <p className={theme ? 'Homepage-header-text2' : "Homepage-header-text2-dark"}>I'm a Full Stack and Web 3 Developer.</p>
-
+              </div>
+              
+              <p className={theme ? 'Homepage-header-text2' : "Homepage-header-text2-dark"}>I'm a Full Stack and Web 3 Developer.</p>
+             
             </div>
             <div className='Homepage-body'>
-        <div className={theme ? 'projects-headline' : "projects-headline-dark"}>
+              <div className={theme ? 'projects-headline' : "projects-headline-dark"}>
                   Some of the things I've built...
                 <SouthOutlinedIcon className='icon' />
               </div>

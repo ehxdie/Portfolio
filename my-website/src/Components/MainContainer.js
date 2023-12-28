@@ -15,7 +15,7 @@ function MainContainer() {
   const theme = useSelector((state) => state);
   return (
 
-      <div className={theme? 'Maincontainer': "Maincontainer-dark"}>
+      <div className= {theme? 'Maincontainer': "Maincontainer-dark"}>
       <Header/>
       <Routes>
         <Route path="/" element={<HomePage/>} />

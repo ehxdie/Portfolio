@@ -14,7 +14,7 @@ function AboutPage() {
       <div className='Aboutpage-container'>
         <div className='Aboutpage-about'>
           <div className='Aboutpage-about-text'>
-          <p className={theme ? 'Aboutpage-about-text1': 'Aboutpage-about-text1-dark'}>Hi, I'm Edidiong Udosen Ephraim</p>
+          <p className={theme ? 'Aboutpage-about-text1' : 'Aboutpage-about-text1-dark'}>Hi, I'm Edidiong Udosen Ephraim</p>
           <p className={theme ? 'Aboutpage-about-text2' : 'Aboutpage-about-text2-dark'}>I am a dedicated software engineer with a diverse academic and career background, as a tech enthusiast I am actively learning new technologies and developing new projects.</p>
           <div className={theme ? 'Aboutpage-techstack ' : 'Aboutpage-techstack-dark'}>
             Core technologies:
