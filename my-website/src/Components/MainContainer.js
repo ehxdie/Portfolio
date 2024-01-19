@@ -18,7 +18,7 @@ function MainContainer() {
       <div className= {theme? 'Maincontainer': "Maincontainer-dark"}>
       <Header/>
       <Routes>
-        <Route path="/" element={<HomePage/>} />
+        <Route path="/Portfolio" element={<HomePage/>} />
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/ContactPage" element={<ContactPage />} />
       </Routes>
