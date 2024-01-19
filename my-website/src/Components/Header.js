@@ -24,7 +24,7 @@ function Header() {
         </div>
           <div className='Header-container-2'>
             <div onClick={() => {
-          navigate('/Portfolio/')
+                navigate('/Portfolio/')
               }} className={theme ? 'links-style' : "links-style-dark"}>
                 Work
             </div>
