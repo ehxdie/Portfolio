@@ -10,13 +10,13 @@ function Footer() {
           </div>
           <div className='Footer-container-2'>
               <div>
-                  <a href='https://www.linkedin.com/in/edidiong-ephraim/' className={theme ? 'links-style' : "links-style-dark"}>Linkeldn</a>
+                  <a href='https://www.linkedin.com/in/edidiong-ephraim/' className={theme ? 'links-style' : "links-style-dark"} rel="noopener noreferrer" target="_blank">Linkeldn</a>
               </div>
               <div>
-                  <a href='https://www.linkedin.com/in/edidiong-ephraim/' className={theme ? 'links-style' : "links-style-dark"}>Email</a>
+                  <a href='mailto:ephraimedy@gmail.com' className={theme ? 'links-style' : "links-style-dark"} rel="noopener noreferrer" target="_blank">Email</a>
               </div>
               <div>
-                  <a href='https://github.com/ehxdie' className={theme ? ' links-style' : "links-style-dark"}>Github</a>
+                  <a href='https://github.com/ehxdie' className={theme ? ' links-style' : "links-style-dark"} rel="noopener noreferrer" target="_blank">Github</a>
               </div>
           </div>
       </div>
