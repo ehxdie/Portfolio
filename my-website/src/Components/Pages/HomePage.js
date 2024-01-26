@@ -20,7 +20,7 @@ function HomePage() {
       name: "Mern Application 'workout buddy'",
       description: "This is a full stack application built on the MERN stack with some CRUD features",
       stack: "React, MongoDB, Express and Node",
-      link: "http://stackoverflow.com",
+      link: "https://fitflex-ten.vercel.app/",
       img: workoutimg,
     },
     {
