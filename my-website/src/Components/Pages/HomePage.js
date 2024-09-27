@@ -18,8 +18,8 @@ function HomePage() {
   const [projects, setprojects] = useState([
     {
       name: "Mern Application 'workout buddy'",
-      description: "This is a full stack application built on the MERN stack with a Rust backend",
-      stack: "React, MongoDB, Express, Node, Warp and Rust",
+      description: "This is a full stack application built on the MERN stack with a Rust backend and Docker",
+      stack: "React, MongoDB, Express, Node, Warp, Rust and Docker",
       link: "https://fitflex-ten.vercel.app/",
       img: workoutimg,
     },
