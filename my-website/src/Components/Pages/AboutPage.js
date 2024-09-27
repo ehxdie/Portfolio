@@ -19,17 +19,16 @@ function AboutPage() {
           <div className={theme ? 'Aboutpage-techstack ' : 'Aboutpage-techstack-dark'}>
             Core technologies:
             <ul className='list'>
-              <li className='list1'> Javascript</li>
+              <li className='list1'> Typescript</li>
               <li className='list1'> Solidity</li>
               <li className='list1'> NodeJS</li>
               <li className='list1'> MongoDB</li>
               <li className='list1'> ReactJS</li>
               <li className='list1'> EtherJs</li>
               <li className='list1'> Express</li>
-              <li className='list1'> Bootstrap</li>
-              <li className='list1'> Bootstrap</li>
-              <li className='list1'> Jquery</li>
-
+              <li className='list1'> Docker </li>
+              <li className='list1'> Rust </li>
+              <li className='list1'> Warp </li>
             </ul>
 
 

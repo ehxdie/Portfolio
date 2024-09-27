@@ -18,8 +18,8 @@ function HomePage() {
   const [projects, setprojects] = useState([
     {
       name: "Mern Application 'workout buddy'",
-      description: "This is a full stack application built on the MERN stack with some CRUD features",
-      stack: "React, MongoDB, Express and Node",
+      description: "This is a full stack application built on the MERN stack with a Rust backend",
+      stack: "React, MongoDB, Express, Node, Warp and Rust",
       link: "https://fitflex-ten.vercel.app/",
       img: workoutimg,
     },
@@ -61,7 +61,7 @@ function HomePage() {
           </div>
         </div>
 
-        <p className={theme ? 'Homepage-header-text2' : "Homepage-header-text2-dark"}>I'm a Full Stack and Web 3 Developer.</p>
+        <p className={theme ? 'Homepage-header-text2' : "Homepage-header-text2-dark"}>I'm a Software Engineer.</p>
 
       </div>
       <div className='Homepage-body'>
